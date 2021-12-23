@@ -90,7 +90,7 @@
 //
 #define TEMP_0_PIN                          PC1   // TH1
 #define TEMP_1_PIN                          PC2   // TH2
-#define TEMP_BED_PIN                        PC0   // TB1
+#define TEMP_BED_PIN                        PC0   // TB1 not on autotruder
 
 //
 // Heaters / Fans
@@ -110,7 +110,7 @@
 #ifndef FAN_PIN
   #define FAN_PIN                           PB1   // FAN
 #endif
-#ifndef HEATER_BED_PIN
+#ifndef HEATER_BED_PIN // not on Autotruder
   #define HEATER_BED_PIN                    PA0
 #endif
 
