@@ -66,6 +66,9 @@ void GcodeSuite::M406() {
  */
 void GcodeSuite::M407() {
   SERIAL_ECHOLNPGM("Filament dia (measured mm):", filwidth.measured_mm);
+  if (DEBUGGING(INFO)) {
+    SERIAL_ECHOLNPGM("raw:", filwidth.raw, );
+  }
 }
 
 #endif // FILAMENT_WIDTH_SENSOR

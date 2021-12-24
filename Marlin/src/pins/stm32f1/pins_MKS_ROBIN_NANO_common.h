@@ -89,7 +89,7 @@
 // Temperature Sensors
 //
 #define TEMP_0_PIN                          PC1   // TH1
-#define TEMP_1_PIN                          PC2   // TH2
+// #define TEMP_1_PIN                          PC2   // TH2 used for filament width
 #define TEMP_BED_PIN                        PC0   // TB1 not on autotruder
 
 //
@@ -147,6 +147,8 @@
   #define FIL_RUNOUT_PIN                    PA4
   #define FIL_RUNOUT2_PIN                   PE6
 #endif
+
+#define FILWIDTH_PIN                        PC2  // normally TH2
 
 //
 // SD Card
