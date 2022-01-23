@@ -586,7 +586,7 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN -1
+#define E0_AUTO_FAN_PIN PB0 // HE1 
 #define E1_AUTO_FAN_PIN -1
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
@@ -598,7 +598,7 @@
 #define COOLER_AUTO_FAN_PIN -1
 #define COOLER_FAN_PIN -1
 
-#define EXTRUDER_AUTO_FAN_TEMPERATURE 50
+#define EXTRUDER_AUTO_FAN_TEMPERATURE 100
 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
 #define CHAMBER_AUTO_FAN_TEMPERATURE 30
 #define CHAMBER_AUTO_FAN_SPEED 255
@@ -3549,11 +3549,12 @@
   // Linear interpolation is performed between the nearest two calibration points. 
   // First column is raw analog read value, second column is diameter in mm.
   #define FILWIDTH_TABLE \
-  { 0     , 3.000 }, \
-  { 14868, 1.99 }, \
-  { 15418, 1.78 }, \
-  { 15920, 1.59 }, \
-  { 16383  , 0.000 } //safety; do not change this line
+  { 0     , 9.20 }, \
+  { 14024, 1.98 }, \
+  { 14426, 1.75 }, \
+  { 14840, 1.51 }, \
+  { 15416, 1.27 }, \
+  { 32767, 0.000 } //safety; do not change this line
 #endif
 
 #if ENABLED(FILAMENT_WIDTH_SENSOR)
