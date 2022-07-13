@@ -1,4 +1,9 @@
 This branch build specifically for a Recreator 3D with an Xvico LCD display and a MKS Robin Nano V1.2 controller.
+
+# Releases
+T1 - includes filmanet width sensor
+T2 - include filament runout sensor to detect end of bottle
+ 
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
